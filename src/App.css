@@ -1,42 +1,54 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f9ff;
+  font-family: sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.booking-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.card {
-  padding: 2em;
+.form-group input[type="text"],
+.form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
-.read-the-docs {
-  color: #888;
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+
+.submit-btn {
+  padding: 12px;
+  background-color: #0284c7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background-color: #0369a1;
+}
+

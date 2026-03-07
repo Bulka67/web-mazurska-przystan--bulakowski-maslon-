@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+    return (
+        <div className="main-container">
+            <div className="booking-card">
+                <h1>⚓ Mazurska Przystań</h1>
+                <p>Kalkulator rezerwacji sprzętu</p>
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+                <div className="form-group">
+                    <label>Imię i nazwisko:</label>
+                    <input type="text" placeholder="Wpisz swoje dane..." />
+                </div>
+
+                <div className="form-group">
+                    <label>Wybierz jednostkę:</label>
+                    <select>
+                        <option value="kajak">Kajak (20zł/h)</option>
+                        <option value="rower">Rower wodny (35zł/h)</option>
+                        <option value="omega">Omega (150zł/h)</option>
+                    </select>
+                </div>
+
+                <div className="form-group">
+                    <label>Czas wynajmu (h):</label>
+                    <input type="range" min="1" max="8" />
+                </div>
+
+                <div className="checkbox-group">
+                    <label>
+                        <input type="checkbox" /> Akceptuję regulamin
+                    </label>
+                </div>
+
+                <button className="submit-btn">Rezerwuję</button>
+            </div>
+        </div>
+    );
 }
 
-export default App
+export default App;
