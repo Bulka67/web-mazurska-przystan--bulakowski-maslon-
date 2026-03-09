@@ -1,5 +1,5 @@
 # ⚓ Projekt: Mazurska Przystań - System Rezerwacji
-
+ 🎨 UI Master (User Interface) - Bułakowski, 🧙‍♂️ Logic Wizard (Business Logic) - Masłoń
 
 Witajcie w zespole deweloperskim! Waszym zadaniem jest stworzenie aplikacji typu "Kalkulator Rezerwacji" dla wypożyczalni sprzętu wodnego na Mazurach.
 
