@@ -14,7 +14,9 @@ function App() {
             kajak: 20,
             rower: 35,
             omega: 150
+
         }
+
 
         let total = prices[boat] * hours
 
@@ -52,7 +54,20 @@ function App() {
                         <option value="omega">Jacht Omega (150 zł/h)</option>
                     </select>
                 </div>
-
+                {boat === 'omega' && (
+                    <div style={{
+                        padding: '10px',
+                        backgroundColor: '#fff3cd',
+                        color: '#856404',
+                        border: '1px solid #ffeeba',
+                        borderRadius: '4px',
+                        fontSize: '0.85rem',
+                        marginBottom: '10px',
+                        fontWeight: '600'
+                    }}>
+                        ⚠️ Wynajem jachtu Omega wymaga patentu żeglarskiego!
+                    </div>
+                )}
                 <div className="input-group">
                     <label>Czas wynajmu: <strong>{hours}h</strong></label>
                     <input
